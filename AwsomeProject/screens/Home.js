@@ -5,7 +5,6 @@ import {
   Text,
   TouchableOpacity,
   FlatList,
-  RefreshControl,
 } from "react-native";
 import PalettePreview from "../components/PalettePreview";
 
