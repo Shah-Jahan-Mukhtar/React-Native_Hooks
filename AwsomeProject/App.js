@@ -12,28 +12,44 @@ import {
 import Home from "./screens/Home";
 // import ColorPalette from "./screens/Colors";
 // import { SafeAreaView } from "react-native-web";
-
+import File from "./screens/File";
 // const Stack = createStackNavigator();
 
 export default function App() {
   // const [Count, setCount] = useState("");
+  // const [obj, setObj] = useState([
+  //   { name: "Ali", email: "124@gmail.com" },
+  //   { name: "Arslan", email: "123@gmail.com" },
+  // ]);
 
   return (
-    <SafeAreaView style={{ marginTop: 50 }}>
-      <Text>Object Update:</Text>
+    // <SafeAreaView style={{ marginTop: 50 }}>
+    //   <Text>
+    //     Name Update:
+    //     {obj[0].name},,,
+    //     {obj[1].name} {obj.name2}
+    //   </Text>
+    //   <Text>
+    //     Email Update : {obj[0].email}
+    //     {obj[0].email2}
+    //   </Text>
 
-      <View style={{ flexDirection: "row", padding: 10 }}>
-        <TouchableOpacity onPress={() => console.log(obj.name)}>
-          <Text> Name update</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => setObj((obj.email = "Tayyab@gmail.com"))}
-        >
-          <Text style={{ paddingLeft: 50 }}>Email update</Text>
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
-
+    //   <View style={{ flexDirection: "row", padding: 10 }}>
+    //     <TouchableOpacity
+    //       // onPress={() => setObj({prevObj=>(...prevObj,[0].) }})}
+    //     >
+    //       <Text> Name update</Text>
+    //     </TouchableOpacity>
+    //     <TouchableOpacity
+    //       onPress={() =>
+    //         setObj({ email: "Shahjahan@gmail.com", email2: "hamza@gmail.com" })
+    //       }
+    //     >
+    //       <Text style={{ paddingLeft: 50 }}>Email update</Text>
+    //     </TouchableOpacity>
+    //   </View>
+    // </SafeAreaView>
+    <File />
     // <SafeAreaView style={{ marginTop: 50 }}>
     //   <Text>Count:{Count}</Text>
 
