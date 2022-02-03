@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
 const File = () => {
@@ -12,9 +12,11 @@ const File = () => {
         flexDirection: "row",
       }}
     >
-      {array.map((item) => (
-        <Text>{item}</Text>
-      ))}
+      <Text>{array}</Text>
+
+      <TouchableOpacity onPress={() => setArray((array[0] = "Abubakar"))}>
+        <Text>Update the Array</Text>
+      </TouchableOpacity>
     </View>
   );
 };
