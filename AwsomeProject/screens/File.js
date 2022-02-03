@@ -14,7 +14,11 @@ const File = () => {
     >
       <Text>{array}</Text>
 
-      <TouchableOpacity onPress={() => setArray((array[0] = "Abubakar"))}>
+      <TouchableOpacity
+        onPress={() =>
+          setArray(((array[0] = "Abubakar"), (array[1] = "Hamayun")))
+        }
+      >
         <Text>Update the Array</Text>
       </TouchableOpacity>
     </View>
