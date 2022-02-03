@@ -12,14 +12,15 @@ const File = () => {
         flexDirection: "row",
       }}
     >
-      <Text>{array}</Text>
+      <Text>First Array:{array[0]}</Text>
+      <Text>Second Array:{array[1]}</Text>
 
       <TouchableOpacity
         onPress={() =>
-          setArray(((array[0] = "Abubakar"), (array[1] = "Hamayun")))
+          setArray([((array[0] = "Abubakar"), (array[1] = "Rana"))])
         }
       >
-        <Text>Update the Array</Text>
+        <Text style={{ paddingLeft: 20 }}>Update the Array</Text>
       </TouchableOpacity>
     </View>
   );
