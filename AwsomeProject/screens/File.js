@@ -3,6 +3,11 @@ import React, { useState } from "react";
 
 const File = () => {
   const [array, setArray] = useState(["ali", "hamza", "danish"]);
+
+  const updateArr = () => {
+    setArray([...array, "Hamayun"]);
+  };
+
   return (
     <View
       style={{
@@ -12,20 +17,24 @@ const File = () => {
         flexDirection: "column",
       }}
     >
-      <Text>First Array: {array[0]}</Text>
-      <Text>Sec Array: {array[1]}</Text>
-      <Text>3rd Array: {array[2]}</Text>
+      <Text>First Array: {array}</Text>
+      {/* <Text>2nd Array: {array[1]}</Text> */}
+
+      {/* <Text>Sec Array: {array[1]}</Text>
+      <Text>3rd Array: {array[2]}</Text> */}
 
       <TouchableOpacity
-        onPress={() =>
-          setArray([
-            (array[0] = "Abubakar"),
-            (array[1] = "Bilal"),
-            (array[2] = "Shahzaib"),
-          ])
+        onPress={
+          updateArr
+          // () =>
+          // setArray(
+
+          //   // (array) => [...array, [(array = "Shahzaib")]
+          //   // (array[2] = "Shahzaib"),
+          // )
         }
       >
-        <Text>Update the Array</Text>
+        <Text style={{ backgroundColor: "cyan" }}>Update the Array</Text>
       </TouchableOpacity>
     </View>
   );
