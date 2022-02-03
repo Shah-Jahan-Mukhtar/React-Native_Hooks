@@ -10,7 +10,7 @@ const File = () => {
   });
 
   const updateArr = () => {
-    setArray([{ ...array, [name4]: "Hamayun" }]);
+    setArray([{ ...array, name4: "Hamayun" }]);
   };
 
   return (
