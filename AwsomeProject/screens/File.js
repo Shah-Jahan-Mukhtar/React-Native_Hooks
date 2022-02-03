@@ -9,18 +9,23 @@ const File = () => {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        flexDirection: "row",
+        flexDirection: "column",
       }}
     >
-      <Text>First Array:{array[0]}</Text>
-      <Text>Second Array:{array[1]}</Text>
+      <Text>First Array: {array[0]}</Text>
+      <Text>Sec Array: {array[1]}</Text>
+      <Text>3rd Array: {array[2]}</Text>
 
       <TouchableOpacity
         onPress={() =>
-          setArray([((array[0] = "Abubakar"), (array[1] = "Rana"))])
+          setArray([
+            (array[0] = "Abubakar"),
+            (array[1] = "Bilal"),
+            (array[2] = "Shahzaib"),
+          ])
         }
       >
-        <Text style={{ paddingLeft: 20 }}>Update the Array</Text>
+        <Text>Update the Array</Text>
       </TouchableOpacity>
     </View>
   );
