@@ -16,10 +16,13 @@ const File = () => {
     },
   ]);
 
-  let updateValue = [(array[0].name4 = "Hamayun"), (array[0].name = "Tayyab")];
+  let updateValue = [(array[0].name4 = "Hamayun")];
 
   const updateArr = () => {
-    setArray({ ...array, ...updateValue });
+    [(array[0].name = "umair")],
+      [(array[1].name7 = "IrfanAli")],
+      [(array[1].name5 = "Nasir")];
+    setArray([...array, ...updateValue]);
   };
 
   return (
@@ -29,6 +32,7 @@ const File = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        backgroundColor: "white",
       }}
     >
       <Text>First Array: {array[0].name}</Text>
@@ -47,6 +51,7 @@ const File = () => {
       <TouchableOpacity
         onPress={
           updateArr
+
           // () =>
           // setArray(
 

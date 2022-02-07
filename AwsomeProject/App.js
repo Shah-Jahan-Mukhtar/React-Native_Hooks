@@ -13,6 +13,7 @@ import Home from "./screens/Home";
 // import ColorPalette from "./screens/Colors";
 // import { SafeAreaView } from "react-native-web";
 import File from "./screens/File";
+import Callback from "./screens/Callback";
 // const Stack = createStackNavigator();
 
 export default function App() {
@@ -49,7 +50,8 @@ export default function App() {
     //     </TouchableOpacity>
     //   </View>
     // </SafeAreaView>
-    <File />
+    // <File />
+    <Callback />
     // <SafeAreaView style={{ marginTop: 50 }}>
     //   <Text>Count:{Count}</Text>
 
