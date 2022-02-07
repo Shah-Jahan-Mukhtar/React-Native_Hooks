@@ -2,15 +2,24 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
 const File = () => {
-  const [array, setArray] = useState({
-    name: "ali",
-    name2: "hamza",
-    name3: "danish",
-    name4: "",
-  });
+  const [array, setArray] = useState([
+    {
+      name: "ali",
+      name2: "hamza",
+      name3: "danish",
+      name4: "",
+    },
+    {
+      name5: "Qais",
+      name6: "usama",
+      name7: "Abubakar",
+    },
+  ]);
+
+  let updateValue = [(array[0].name4 = "Hamayun"), (array[0].name = "Tayyab")];
 
   const updateArr = () => {
-    setArray([{ ...array, name4: "Hamayun" }]);
+    setArray({ ...array, ...updateValue });
   };
 
   return (
@@ -22,10 +31,13 @@ const File = () => {
         flexDirection: "column",
       }}
     >
-      <Text>First Array: {array.name}</Text>
-      <Text>2nd Array: {array.name2}</Text>
-      <Text>3rd Array: {array.name3}</Text>
-      <Text>4th Array: {array.name4}</Text>
+      <Text>First Array: {array[0].name}</Text>
+      <Text>2nd Array: {array[0].name2}</Text>
+      <Text>3rd Array: {array[0].name3}</Text>
+      <Text>4th Array: {array[0].name4}</Text>
+      <Text>5th Array: {array[1].name5}</Text>
+      <Text>6th Array: {array[1].name6}</Text>
+      <Text>7th Array: {array[1].name7}</Text>
 
       {/* <Text>2nd Array: {array[1]}</Text> */}
 
