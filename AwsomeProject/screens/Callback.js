@@ -2,14 +2,16 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState, useCallback } from "react";
 
 const Callback = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState({});
 
   const handleIncrement = useCallback(() => {
-    setCount(count + 1);
-  }, []);
+    setCount({ name: "Shahjahan", name2: "Abubakar" });
+  }, [count]);
   return (
     <View style={{ flex: 1, justifyContent: "center", alignContent: "center" }}>
-      <Text>Count:{count}</Text>
+      <Text>Count:{count.name}</Text>
+      <Text>Count:{count.name2}</Text>
+
       <TouchableOpacity onPress={handleIncrement}>
         <Text>Click to update</Text>
       </TouchableOpacity>
