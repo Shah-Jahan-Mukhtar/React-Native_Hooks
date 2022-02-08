@@ -13,7 +13,7 @@ const Callback = () => {
   }, [Decrement]);
 
   useEffect(() => {
-    handleDecrement();
+    alert("Click ");
   }, [Decrement]);
   return (
     <View style={{ flex: 1, justifyContent: "center", alignContent: "center" }}>
