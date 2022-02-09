@@ -13,18 +13,26 @@ const Callback = () => {
   }, [Decrement]);
 
   useEffect(() => {
-    alert("Click ");
+    alert("Koi chngi hai v aa?");
+  }, [count]);
+  useEffect(() => {
+    alert("Bari jaldi a tnu");
   }, [Decrement]);
+
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignContent: "center" }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Count:{count}</Text>
       <Text>Count:{Decrement}</Text>
 
       <TouchableOpacity onPress={handleIncrement}>
-        <Text>Click to Increment</Text>
+        <Text style={{ backgroundColor: "cyan", marginTop: 20, fontSize: 40 }}>
+          Check Your habits
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleDecrement}>
-        <Text>Click to Decrement</Text>
+        <Text style={{ backgroundColor: "lime", marginTop: 20, fontSize: 40 }}>
+          Check Your Wife Name
+        </Text>
       </TouchableOpacity>
     </View>
   );
