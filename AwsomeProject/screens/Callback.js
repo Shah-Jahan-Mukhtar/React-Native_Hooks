@@ -38,7 +38,11 @@ const Callback = () => {
     <ScrollView
       style={styles.scrollView}
       refreshControl={
-        <RefreshControl refreshing={Refersh} onRefresh={handleRefresh} />
+        <RefreshControl
+          refreshing={Refersh}
+          onRefresh={handleRefresh}
+          backgroundColor="red"
+        />
       }
     >
       <View
