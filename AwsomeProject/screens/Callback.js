@@ -21,10 +21,10 @@ const Callback = () => {
   }, [Decrement]);
 
   useEffect(() => {
-    alert("Koi chngi hai v aa?");
+    alert("Push the button to start counting");
   }, [count]);
   useEffect(() => {
-    alert("Bari jaldi a tnu");
+    alert("Decrement start");
   }, [Decrement]);
 
   const handleRefresh = useCallback(() => {
