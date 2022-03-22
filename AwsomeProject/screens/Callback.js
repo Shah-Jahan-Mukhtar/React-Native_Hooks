@@ -55,14 +55,14 @@ const Callback = () => {
           <Text
             style={{ backgroundColor: "cyan", marginTop: 20, fontSize: 40 }}
           >
-            Check Your habits
+            Increment Check
           </Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleDecrement}>
           <Text
             style={{ backgroundColor: "lime", marginTop: 20, fontSize: 40 }}
           >
-            Check Your Wife Name
+            Decrement Check
           </Text>
         </TouchableOpacity>
       </View>
